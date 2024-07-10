@@ -1,0 +1,14 @@
+.footer-links li{
+    list-style: none;
+    padding: 8px;
+    cursor: pointer;
+    /* justify-content: ; */
+}
+
+.footer-links-first-column{
+    list-style: none;
+    cursor: pointer;
+    /* background-color: blue; */
+/*  */
+
+}
