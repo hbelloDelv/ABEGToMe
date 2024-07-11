@@ -8,8 +8,8 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-import andriodAppStoreLogo from './ios_android_img/andriod_logo.png';
-import iosAppStoreLogo from './ios_android_img/ios_logo.png';
+// import andriodAppStoreLogo from './ios_android_img/andriod_logo.png';
+// import iosAppStoreLogo from './ios_android_img/ios_logo.png';
 
 
 
@@ -55,7 +55,7 @@ const ThirdColoumn = styled(Box)(({theme})=>({
 
 const Footer = () => {
   return (
-    <Grid container spacing={2} sx={{backgroundColor: '#0d1321', color: 'white', padding: '0px 8px', paddingTop: '16px'}}>
+    <Grid container spacing={2} sx={{backgroundColor: '#0d1321', color: 'white', padding: '0px 8px', paddingTop: '16px', marginTop: '16px'}}>
         <Grid item xs={12} md={4}>
             <FirstColoumn>
               <ul className="footer-links-first-column">
