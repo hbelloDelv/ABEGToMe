@@ -1,19 +1,26 @@
 import React from 'react'
 import {Grid, Box, Button, Typography } from "@mui/material";
-// import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
 
-const Item_2 = () => {
+const Item2 = () => {
   return (
     <Grid container sx={{width:{md: '80%', xs: '100%'}, marginTop: '64px'}} >
     <Grid item xs={12} md={6}>
     <Box sx={{padding:{md: '0px', xs: '16px'}}}>
-      <img src={`${process.env.PUBLIC_URL}/asset/item_2_image.png`} alt="brand-logo"  style={{width: "80%", borderRadius: '4px' }} />
+      <Box
+                component="img"
+                src={`${process.env.PUBLIC_URL}/asset/item_2_image.png`}
+                alt="brand-logo"
+                sx={{
+                    width: { md: '80%', xs: '100%' },
+                    borderRadius: '4px'
+                }}
+            />
       </Box>
     </Grid>
 
     <Grid item xs={12} md={6} > 
-          <Box sx={{padding:{md: '0px', xs: '16px'}}}>
-          <Typography variant="h4">
+          <Box sx={{padding:{md: '0px', xs: '16px'}}}  height="100%"  alignContent="flex-end">
+          <Typography variant="h3">
               Who are we?
           </Typography>
           <Typography variant="body1">
@@ -27,11 +34,11 @@ const Item_2 = () => {
             features, all designed to enhance your experience and minimize stress. 
             Choose Abeg for top-notch, efficient, and dependable towing services.
           </Typography>
-          <Box sx={{marginTop: '8px'}}><Button> Learn More</Button></Box>
+          <Box sx={{marginTop: '32px'}}><Button> Learn more</Button></Box>
         </Box>
     </Grid> 
   </Grid>
   )
 }
 
-export default Item_2
+export default Item2

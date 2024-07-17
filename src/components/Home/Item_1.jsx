@@ -1,13 +1,13 @@
 import React from 'react'
-import {Grid, Box, Button, Typography } from "@mui/material";
+import {Grid, Box, Button, Typography, Stack } from "@mui/material";
 import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
 
 
-const Item_1 = () => {
+const Item1 = () => {
   return (
     <Grid container sx={{width:{md: '80%', xs: '100%'}}}>
       <Grid item xs={12} md={6}>
-            <Box sx={{padding:{md: '72px', xs: '16px' } }}>
+            <Box sx={{padding:{md: '72px', xs: '16px' }} }>
             <Typography variant="h4">
                 Where ever you go,
             </Typography>
@@ -21,8 +21,23 @@ const Item_1 = () => {
                 just a tap away whenever you need it.
             </Typography>
             <Box sx={{marginBottom: '8px', marginTop: '16px'}}>
-                <Button size="large"sx={{marginRight: '8px'}}>iOS</Button>
-                <Button size="large">andriod</Button>
+                <Stack direction="row" marginTop='16px'>
+                            <Box 
+                                component="img"
+                                src={`${process.env.PUBLIC_URL}/asset/playStore_image.png`}
+                                alt="play store"
+                                marginRight="16px"
+                                sx={{cursor: "pointer"}}
+                                >
+                            </Box>
+                            <Box 
+                                component="img"
+                                src={`${process.env.PUBLIC_URL}/asset/appStore_image.png`}
+                                alt="app store"
+                                sx={{cursor: "pointer"}}
+                            >
+                            </Box>
+                    </Stack>
             </Box>
             <Box><Button><HeadsetMicIcon sx={{marginRight: '6px'}}/> Contact us NOW</Button></Box>
           </Box>
@@ -40,4 +55,4 @@ const Item_1 = () => {
   )
 }
 
-export default Item_1
+export default Item1

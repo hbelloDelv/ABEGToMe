@@ -1,13 +1,30 @@
 import React from 'react'
 import { Box,  } from '@mui/material'
-import Item_1 from './Item_1'
-import Item_2 from './Item_2'
+import Item1 from './Item_1'
+import Item2 from './Item_2'
+import Item3 from './Item_3'
+import Item4 from './Item_4'
+import Item5 from './Item_5'
+import Item6 from './Item_6'
+import Item7 from './Item_7'
+import Item8 from './Item_8'
 
 const Home = () => {
   return (
-    <Box sx={{display: 'flex', flexDirection:"column", justifyContent: 'center', alignItems: "center"}}>
-      <Item_1 />
-      <Item_2 />
+    <Box sx={{
+        display: 'flex', 
+        flexDirection:"column", 
+        justifyContent: 'center', 
+        alignItems: "center"
+        }}>
+      <Item1 />
+      <Item2 />
+      <Item3 />
+      <Item4 />
+      <Item5 />
+      <Item6 />
+      <Item7 />
+      <Item8 />
     </Box>
   )
 }
