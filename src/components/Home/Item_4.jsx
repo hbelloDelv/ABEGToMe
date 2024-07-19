@@ -22,8 +22,17 @@ const Item4 = () => {
   return (
       <Box sx={{ width: { md: '80%', xs: '100%'}, marginTop: '128px' }}>
         <Grid container >
-            <Grid  item xs={12}md={6}>
-                <Box alignContent="center" height="100%" sx={{padding:{md: '0px', xs: '16px'}}}>
+            <Grid  item xs={12}md={6} s>
+                <Box 
+                        alignContent="center" 
+                        height="100%" 
+                        sx={{padding:{md: '0px', xs: '16px'}, 
+                        display: {md: 'flex',},
+                        alignItems:"center",
+                        justifyContent: 'center',
+                        flexDirection: 'column',
+                        width: '100%',
+                        }}>
                     <Typography variant={isXs ? 'h4' : 'h3'} marginBottom="8px">Why choose us</Typography>
                     <ul>
                         <Styledli><TaskAltIcon sx={{paddingRight: '8px', fontSize: '2rem'}}/> Quick response time</Styledli>
@@ -33,12 +42,13 @@ const Item4 = () => {
                     </ul>
                 </Box>
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={6} >
                 <Box 
                     component="img"
                     src={`${process.env.PUBLIC_URL}/asset/item_4_image.png`}
                     alt="service image"
-                    sx={{width:{xs: '100%', md: '80%'}, padding:{md: '0px', xs: '16px'}}}
+                    sx={{width:{xs: '100%', md: '100%'}, padding:{md: '0px', xs: '16px'}}}
+                    borderRadius='4px'
                 >
                 </Box>
             </Grid>

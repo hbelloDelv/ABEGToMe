@@ -2,13 +2,14 @@ import { Toolbar, AppBar, Box, IconButton, Menu, MenuItem } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
 import { styled } from '@mui/material/styles'
 import React,{useState} from 'react'
+import {Link } from "react-router-dom";
 import './header.css'
 import Brandlogo from './logo-image/brand-logo.jpg'
 
 
 
 const DesktopNavbar = styled(Box)(({theme})=>({
-        width: '70%',
+        width: '80%',
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center'
@@ -35,17 +36,17 @@ const Header = () => {
       <Toolbar sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
         <DesktopNavbar>    
                 <Box sx={{display:{xs: 'none', md: 'block'}}}>
-                   <img src={`${process.env.PUBLIC_URL}/brand-logo.jpg`} alt="brand-logo"  width="20%" style={{cursor: 'pointer'}} />
+                   <img src={`${process.env.PUBLIC_URL}/brand-logo.jpg`} alt="brand-logo"  width="16%" style={{cursor: 'pointer'}} />
                 </Box>
                 <Box sx={{display:{xs: 'none', md: 'block'}}}>
                     <ul className="ul-links">
-                        <li>Home</li>
-                        <li>Services</li>
-                        <li>Partnership</li>
-                        <li>Blog</li>
-                        <li>Gallery</li>
-                        <li style={{minWidth: '8vw'}}>About Us</li>
-                        <li>Contact </li>
+                        <li><Link to="/" className="nav-item">Home</Link></li>
+                        <li><Link to="/services" className="nav-item">Services</Link></li>
+                        <li><Link to="/partnership" className="nav-item">Partnership</Link></li>
+                        <li><Link to="/blog" className="nav-item">Blog</Link></li>
+                        <li><Link to="/gallery" className="nav-item">Gallery</Link></li>
+                        <li style={{minWidth: '8vw'}}><Link to="/about" className="nav-item">About Us</Link></li>
+                        <li ><Link to="/contact" className="nav-item">Contact</Link></li>
                     </ul>
                 </Box>
         </DesktopNavbar>

@@ -1,7 +1,8 @@
 import React from 'react'
-import {Grid, Box, Button, Typography } from "@mui/material";
+import {Grid, Box, Button, Typography, useMediaQuery } from "@mui/material";
+import {useTheme} from '@mui/material/styles';
 
-const Item8 = () => {
+const DesktopLayout = () => {
   return (
     <Box 
             sx={{
@@ -11,7 +12,7 @@ const Item8 = () => {
               backgroundSize: 'cover', // Adjust to 'contain' or other value based on your need
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
-              backgroundColor: 'rgb(0, 0, 0, 0.2)',
+              backgroundColor: 'rgb(0, 0, 0, 0.3)',
               backgroundBlendMode: 'darken',
               height: {xs: '40vh', md: '70vh'}, // Adjust based on your design needs
               display: 'flex',
@@ -28,12 +29,52 @@ const Item8 = () => {
                           <Typography variant="h3">Earn more,</Typography>
                           <Typography variant="h3">Become an Abeg</Typography>
                           <Typography variant="h3">Driver</Typography>
-                          <Box><Button>Learn more</Button></Box>
+                          <Box><Button variant="contained">Learn more</Button></Box>
                       </Box>
                   </Grid>
               </Grid>
           </Box>
   )
 }
+
+
+const MobileLayout = () =>{
+    return(
+        <Box margin='72px 0px' padding="0px 8px">
+            <Grid container spacing={2}>
+                <Grid item xs={6}>
+                <Box 
+                    component="img"
+                    src={`${process.env.PUBLIC_URL}/asset/item_8_image.png`}
+                    alt="app store"
+                    width='100%'
+                 >
+                </Box>
+                </Grid>
+                <Grid item xs={6}>
+                    <Box>
+                          <Typography variant="h6">Earn more,</Typography>
+                          <Typography variant="h6">Become an Abeg</Typography>
+                          <Typography variant="h6">Driver</Typography>
+                          <Box><Button variant="contained">Learn more</Button></Box>
+                      </Box>
+                </Grid>
+            </Grid>
+        </Box>
+    )
+}
+
+const Item8 = () => {
+    const theme = useTheme()
+    const matches = useMediaQuery(theme.breakpoints.down('md'))
+    return (
+      
+  <>
+  {!matches && <DesktopLayout />}
+  
+  {matches && <MobileLayout /> }
+  </>
+    )
+  }
 
 export default Item8

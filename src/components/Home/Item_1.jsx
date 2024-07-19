@@ -5,9 +5,9 @@ import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
 
 const Item1 = () => {
   return (
-    <Grid container sx={{width:{md: '80%', xs: '100%'}}}>
+    <Grid container sx={{width:{md: '80%', xs: '100%'}}} marginTop="64px">
       <Grid item xs={12} md={6}>
-            <Box sx={{padding:{md: '72px', xs: '16px' }} }>
+            <Box sx={{padding:{ xs: '16px'}}}>
             <Typography variant="h4">
                 Where ever you go,
             </Typography>
@@ -15,7 +15,7 @@ const Item1 = () => {
                 we've got your back.
             </Typography>
             <Typography variant="body1">
-                Welcome to Abeg, your go-to car towing service for reliable, quick, 
+                Welcome to <strong>Abeg</strong>, your go-to car towing service for reliable, quick, 
                 and effective roadside assistance. Our mobile app is designed 
                 to provide you with peace of mind on the road, ensuring that help is 
                 just a tap away whenever you need it.
@@ -45,8 +45,8 @@ const Item1 = () => {
 
 
       <Grid item xs={12} md={6}>
-      <Box sx={{padding:{md: '0px', xs: '0px'}}}>
-        <img src={`${process.env.PUBLIC_URL}/asset/ABEGMobil_image.png`} alt="brand-logo"  width="100%"  />
+        <Box sx={{display: 'flex', justifyContent: 'center'}}>
+            <img src={`${process.env.PUBLIC_URL}/asset/ABEGMobil_image.png`} alt="mobile app"  width="100%"  />
         </Box>
       </Grid>
 

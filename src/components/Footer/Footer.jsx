@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Box, Typography, IconButton} from "@mui/material";
+import { Grid, Box, Stack, Typography, IconButton} from "@mui/material";
 import './footer.css'
 import { styled } from '@mui/material/styles'
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -22,7 +22,7 @@ const FirstColoumn = styled(Box)(({theme})=>({
   [theme.breakpoints.down("md")]: {
     justifyContent: 'flex-start',
     alignItems: 'none',
-    paddingLeft: '0'
+    paddingLeft: '8px'
   }
 }))
 
@@ -55,15 +55,35 @@ const ThirdColoumn = styled(Box)(({theme})=>({
 
 const Footer = () => {
   return (
-    <Grid container spacing={2} sx={{backgroundColor: '#0d1321', color: 'white', padding: '0px 8px', paddingTop: '16px', }}>
+    <Grid container spacing={2} sx={{backgroundColor: '#0d1321', color: 'white',  paddingTop: '16px', }}>
         <Grid item xs={12} md={4}>
             <FirstColoumn>
               <ul className="footer-links-first-column">
                   <li>
-                     <img src={`${process.env.PUBLIC_URL}/brand-logo.jpg`} alt="brand-logo"  width="10%" style={{cursor: 'pointer', display: 'inline-block'}} />
+                     <img src={`${process.env.PUBLIC_URL}/brand-logo.jpg`} alt="brand-logo"  width="15%" style={{cursor: 'pointer'}} />
                   </li>
                   <li style={{marginTop: '24px'}}>Mobile App available on</li>
-                  {/*  App stores logo here*/}
+                  <li>
+                      <Box>
+                        <Stack direction="row" marginTop='16px' >
+                                <Box 
+                                    component="img"
+                                    src={`${process.env.PUBLIC_URL}/asset/playStore_image.png`}
+                                    alt="play store"
+                                    marginRight="16px"
+                                    sx={{cursor: "pointer"}}
+                                    >
+                                </Box>
+                                <Box 
+                                    component="img"
+                                    src={`${process.env.PUBLIC_URL}/asset/appStore_image.png`}
+                                    alt="app store"
+                                    sx={{cursor: "pointer"}}
+                                >
+                                </Box>
+                        </Stack>
+                    </Box>
+                  </li>
               </ul>
             </FirstColoumn >
         </Grid>
