@@ -35,7 +35,7 @@ const Header = () => {
     <AppBar position="sticky" sx={{backgroundColor: '#0d1321', }} >
       <Toolbar sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
         <DesktopNavbar>    
-                <Box sx={{display:{xs: 'none', md: 'block'}}}>
+                <Box sx={{display:{xs: 'none', md: 'block', padding: '8px 0px'}}}>
                    <img src={`${process.env.PUBLIC_URL}/brand-logo.jpg`} alt="brand-logo"  width="16%" style={{cursor: 'pointer'}} />
                 </Box>
                 <Box sx={{display:{xs: 'none', md: 'block'}}}>
@@ -44,7 +44,7 @@ const Header = () => {
                         <li><Link to="/services" className="nav-item">Services</Link></li>
                         <li><Link to="/partnership" className="nav-item">Partnership</Link></li>
                         <li><Link to="/blog" className="nav-item">Blog</Link></li>
-                        <li><Link to="/gallery" className="nav-item">Gallery</Link></li>
+                        <li><Link to="/gallary" className="nav-item">Gallery</Link></li>
                         <li style={{minWidth: '8vw'}}><Link to="/about" className="nav-item">About Us</Link></li>
                         <li ><Link to="/contact" className="nav-item">Contact</Link></li>
                     </ul>
@@ -55,12 +55,12 @@ const Header = () => {
                    <img src={Brandlogo} alt="brand-logo" width="15%"/>
                 </Box>
                 <Box>
-                   <IconButton>
-                     <MenuIcon sx={{color: 'white', fontSize: '2rem'}} onClick={e => setOpen(true)}/>
+                   <IconButton onClick={e => setOpen(true)}>
+                     <MenuIcon sx={{color: 'white', fontSize: '2rem'}} />
                   </IconButton>
                 </Box>
         </MobileNavbar>
-  
+
       <Menu
         id="demo-positioned-menu"
         aria-labelledby="demo-positioned-button"
@@ -76,21 +76,19 @@ const Header = () => {
         }}
         PaperProps={{
           sx: {
-            minWidth: '50vw', // Adjust the width as needed
-            minHeight: '100vh', // Adjust the height as needed
-            // height: 'calc(100vh - 10px)',
-          },
+            marginTop: '32px',
+            marginLeft: '16px'
+          }
         }}
       >
-        <MenuItem>Home</MenuItem>
-        <MenuItem>Services</MenuItem>
-        <MenuItem>Partnership</MenuItem>
-        <MenuItem>Blog</MenuItem>
-        <MenuItem>Gallery</MenuItem>
-        <MenuItem>About Us</MenuItem>
-        <MenuItem>Contact</MenuItem>
+            <MenuItem><Link to="/" className="nav-item">Home</Link></MenuItem>
+            <MenuItem><Link to="/services" className="nav-item">Services</Link></MenuItem>
+            <MenuItem><Link to="/partnership" className="nav-item">Partnership</Link></MenuItem>
+            <MenuItem><Link to="/blog" className="nav-item">Blog</Link></MenuItem>
+            <MenuItem><Link to="/gallary" className="nav-item">Gallery</Link></MenuItem>
+            <MenuItem><Link to="/about" className="nav-item">About Us</Link></MenuItem>
+            <MenuItem><Link to="/contact" className="nav-item">Contact</Link></MenuItem>
       </Menu>
-
         </Toolbar>
     </AppBar>
     

@@ -18,3 +18,8 @@ body {
   box-sizing: border-box;
   /* font-family:Georgia, 'Times New Roman', Times, serif */
 }
+
+.nav-item{
+  text-decoration: inherit;
+  color: inherit;
+}

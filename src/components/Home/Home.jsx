@@ -6,7 +6,7 @@ import Item3 from './Item_3'
 import Item4 from './Item_4'
 import Item5 from './Item_5'
 import Item6 from './Item_6'
-import Item7 from './Item_7'
+import { DownloadMobileApp } from '../ReusableComponent/DownloadMobileApp'
 import Item8 from './Item_8'
 
 const Home = () => {
@@ -23,7 +23,7 @@ const Home = () => {
       <Item4 />
       <Item5 />
       <Item6 />
-      <Item7 />
+      <DownloadMobileApp />
       <Item8 />
     </Box>
   )

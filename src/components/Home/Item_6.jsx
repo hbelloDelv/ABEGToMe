@@ -20,7 +20,7 @@ const Item6 = () => {
                     <Typography variant={isXs ? 'h6' : 'h4'}>Get your vehicles the</Typography>
                     <Typography variant={isXs ? 'h6' : 'h4'}>proper towing it needs!</Typography>
                     <Typography variant="body1">
-                        At Abeg, we are dedicated to providing reliable, quick, 
+                        At Abeg Tow Me, we are dedicated to providing reliable, quick, 
                         and effective towing solutions to get you back on the 
                         road as soon as possible. Our expert team is available 24/7, 
                         ensuring that help is always just a call or a tap away. 

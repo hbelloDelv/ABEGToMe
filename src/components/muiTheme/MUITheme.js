@@ -1,6 +1,11 @@
 import { createTheme } from "@mui/material/styles"
 
 const AppTheme = createTheme({
+    palette: {
+        otherColor: {
+            main: 'gray'
+        }
+    },
     components: {
         MuiButton:{
             styleOverrides:{

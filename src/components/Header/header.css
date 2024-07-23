@@ -15,10 +15,9 @@
 
 .ul-links li:hover{
     background-color: rgb(49, 49, 49);
-    /* color: 'green'; */
 }
 
-.nav-item{
+/* .nav-item{
     text-decoration: inherit;
     color: inherit;
-}
+} */

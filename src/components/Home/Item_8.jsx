@@ -6,7 +6,7 @@ const DesktopLayout = () => {
   return (
     <Box 
             sx={{
-              width: { xs: '100%', md: '100%' },
+              width: {md: '100%' },
               padding: { md: '0px', xs: '16px' },
               backgroundImage: `url(${process.env.PUBLIC_URL}/asset/item_8_image.png)`,
               backgroundSize: 'cover', // Adjust to 'contain' or other value based on your need
@@ -18,7 +18,7 @@ const DesktopLayout = () => {
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
-              marginTop: '128px'
+
             }}
             alt="abeg driver"
           >
@@ -53,10 +53,10 @@ const MobileLayout = () =>{
                 </Grid>
                 <Grid item xs={6}>
                     <Box>
-                          <Typography variant="h6">Earn more,</Typography>
-                          <Typography variant="h6">Become an Abeg</Typography>
-                          <Typography variant="h6">Driver</Typography>
-                          <Box><Button variant="contained">Learn more</Button></Box>
+                          <Typography variant="h5">Earn more,</Typography>
+                          <Typography variant="h5">Become an Abeg Tow Me</Typography>
+                          <Typography variant="h5">Driver</Typography>
+                          <Box><Button variant="contained" color="otherColor">Learn more</Button></Box>
                       </Box>
                 </Grid>
             </Grid>

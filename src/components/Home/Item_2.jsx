@@ -24,7 +24,7 @@ const Item2 = () => {
               Who are we?
           </Typography>
           <Typography variant="body1">
-            At Abeg, we are dedicated to providing reliable, quick, and effective towing 
+            At Abeg Tow Me, we are dedicated to providing reliable, quick, and effective towing 
             solutions to get you back on the road as soon as possible. Our expert team is 
             available 24/7, ensuring that help is always just a call or a tap away. 
           </Typography>
