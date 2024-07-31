@@ -1,4 +1,4 @@
-import { Grid, Typography, Card, CardContent, CardMedia, Box, Button} from '@mui/material'
+import { Grid, Typography, Card, CardContent, CardMedia, Box, Button, CardActions, CardActionArea} from '@mui/material'
 import { serviceData } from './serviceData'
 import { Link} from 'react-router-dom';
 import {useState} from 'react'
@@ -16,7 +16,7 @@ export const GridItem = () =>{
         <>
             {serviceData.map((item, index) => (
                 <Grid item xs={12} md={4} key={index}>
-                    <Card onMouseOver={handleHover}>
+                    {/* <Card onMouseOver={handleHover}>
                         <CardMedia
                             sx={{ height: 140, display: 'flex', justifyContent: 'center', alignItems: 'center', relative: 'absolute' }}
                         >
@@ -38,7 +38,28 @@ export const GridItem = () =>{
                             </Box>
                         </CardContent>
                         
-                    </Card>
+                    </Card> */}
+
+                    <Card sx={{ maxWidth: 345 }}>
+                        <CardActionArea>
+                            <CardMedia
+                            component="img"
+                            height="140"
+                            image={item.itemHeroImg}
+                            alt="green iguana"
+                            />
+                            <CardContent>
+                            <Typography gutterBottom variant="h6" component="div">
+                                {item.title}
+                            </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                        <CardActions>
+                            <Button  color="primary">
+                            <Link to={`/services/${item.id}`} className="nav-item">Learn more</Link>
+                            </Button>
+                        </CardActions>
+                        </Card>
                       
                 </Grid>
             ))}

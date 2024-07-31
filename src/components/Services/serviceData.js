@@ -1,13 +1,9 @@
-import { AiFillTool } from "react-icons/ai";
-import { ImAidKit } from "react-icons/im";
-import { GiJerrycan } from "react-icons/gi";
-import { GiTowTruck } from "react-icons/gi";
+
 
 
 export const serviceData = [
     {
         id: "Towing_services",
-        itemIcon: "",
         itemHeroImg: "/asset/towingHeroImg.png",
         title: 'Towing Services',
         subTypes: [
@@ -24,14 +20,13 @@ export const serviceData = [
         ],
         images: [
              "/asset/towing1.png",
-             "/asset/towing2.png",
              "/asset/towing3.png",
              "/asset/towing4.png",
+             "/asset/towing2.png",
         ],
     },
     {
         id: "Vehicle_recovery",
-        itemIcon: AiFillTool,
         itemHeroImg: "/asset/vehicleRecHeroImg.png",
         title: 'Vehicle Recovery',
         subTypes: [
@@ -53,7 +48,6 @@ export const serviceData = [
    
     {
         id: 'Speciality_towing',
-        itemIcon: GiTowTruck,
         itemHeroImg: '/asset/specialtyHeroImg.jpg',
         title: 'Speciality Towing',
         subTypes: [
@@ -76,7 +70,6 @@ export const serviceData = [
     },
     {
         id: 'Emergency_services',
-        itemIcon: ImAidKit,
         itemHeroImg: '/asset/emergHeroImg.png',
         title: 'Emergency Services',
         subTypes: [
@@ -123,7 +116,6 @@ export const serviceData = [
     },
     {
         id: 'Fuel_delivery',
-        itemIcon: GiJerrycan,
         itemHeroImg: '/asset/fuelDeliveryHeroImg.png',
         title: 'Fuel Delivery',
         subTypes: [
@@ -139,7 +131,6 @@ export const serviceData = [
 
     {
         id: 'Winching_and_Extraction',
-        itemIcon: '',
         itemHeroImg: '/asset/winchExtrHeroImg.png',
         title: 'Winching and Extraction',
         subTypes: [
