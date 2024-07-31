@@ -53,7 +53,7 @@ const ServicesDesktop = () => {
         width: {xs: '90vw', md: '70vw'},
       }}
     >
-      <Grid container spacing={2}>
+      <Grid container spacing={4}>
         <GridItem />
       </Grid>
     </Box>
@@ -141,7 +141,8 @@ const ServicesMobile = () => {
       sx={{
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        // backgroundColor: 'red'
       }}
     >
     <Box
@@ -149,7 +150,7 @@ const ServicesMobile = () => {
         width: {xs: '90vw', md: '70vw'},
       }}
     >
-      <Grid container spacing={2}>
+      <Grid container spacing={4}>
         <GridItem />
       </Grid>
     </Box>

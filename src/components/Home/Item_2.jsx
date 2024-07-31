@@ -7,13 +7,13 @@ const Item2 = () => {
     <Grid item xs={12} md={6}>
     <Box sx={{padding:{md: '0px', xs: '8px'}, display: 'flex', justifyContent: 'center'}}>
       <Box
-                component="img"
-                src={`${process.env.PUBLIC_URL}/asset/item_2_image.png`}
-                alt="section two image"
-                sx={{
-                    width: { md: '100%', xs: '100%' },
-                    borderRadius: '4px'
-                }}
+            component="img"
+            src={`${process.env.PUBLIC_URL}/asset/item_2_image.png`}
+            alt="section two image"
+            sx={{
+                width: { md: '100%', xs: '100%' },
+                borderRadius: '4px'
+            }}
             />
       </Box>
     </Grid>

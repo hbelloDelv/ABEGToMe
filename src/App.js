@@ -9,6 +9,9 @@ import Gallary from "./components/Gallary/Gallary";
 import About from "./components/AboutUs/AboutUs";
 import Contact from "./components/ContactUs/Contact";
 import Footer from "./components/Footer/Footer";
+import DetailPage from "./components/Services/DetailPage";
+
+import { serviceData} from '../src/components/Services/serviceData'
 
 function App() {
   return (
@@ -18,6 +21,7 @@ function App() {
         <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/services" element={<Services />}></Route>
+            <Route path="/services/:id" element={<DetailPage  serviceData={serviceData}/>}></Route>
             <Route path="/partnership" element={<Partnership />}></Route>
             <Route path="/blog" element={<Blog />}></Route>
             <Route path="/gallary" element={<Gallary />}></Route>

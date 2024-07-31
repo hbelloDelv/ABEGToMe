@@ -134,7 +134,7 @@ const Footer = () => {
               <Grid item md={4}>
                 <IconButton><LinkedInIcon sx={{fontSize:{xs: '1.5rem', md: '2rem'}, color: 'white'}}></LinkedInIcon></IconButton>
               </Grid>
-              <Grid item md={4}><IconButton><TbBrandTiktok sx={{fontSize:{xs: '1.5rem', md: '2rem'}, color: 'white'}}></TbBrandTiktok></IconButton></Grid>
+              <Grid item md={4}><IconButton><TbBrandTiktok style={{fontSize:{xs: '1.5rem', md: '2rem'}, color: 'white'}}></TbBrandTiktok></IconButton></Grid>
               
               <Grid item xs={12} sx={{marginTop: '24px'}}>
                 &copy; 2024 ABEG Tow Me. All Rights Reserved
