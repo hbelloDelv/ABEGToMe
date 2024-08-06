@@ -1,7 +1,10 @@
 import React from 'react'
 import {Grid, Box, Button, Typography } from "@mui/material";
+import { useNavigate } from 'react-router-dom';
 
 const Item2 = () => {
+  const navigate = useNavigate()
+
   return (
     <Grid container sx={{width:{md: '80%', xs: '100%'}, marginTop: '64px'}} spacing={2}>
     <Grid item xs={12} md={6}>
@@ -34,7 +37,8 @@ const Item2 = () => {
             features, all designed to enhance your experience and minimize stress. 
             Choose Abeg for top-notch, efficient, and dependable towing services.
           </Typography>
-          <Box sx={{marginTop: '32px'}}><Button> Learn more</Button></Box>
+            <Box sx={{marginTop: '32px'}}><Button onClick={()=>navigate('/about')}>Learn more</Button>
+          </Box>
         </Box>
     </Grid> 
   </Grid>

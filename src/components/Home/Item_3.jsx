@@ -1,62 +1,62 @@
 import React from 'react'
 import { Stack, Grid, Fab, Box, useMediaQuery, Typography, Divider} from '@mui/material';
 import {useTheme} from '@mui/material/styles';
-
+import { serviceData } from '../Services/serviceData';
+import { Link} from 'react-router-dom';
 
 
 const DesktopLayout = ()=>{
+  
+  const firstStackData = serviceData.slice(0, 4); // Adjust the indices as needed
+  const secondStackData = serviceData.slice(4); // Adjust the indices as needed
+  
   return(
-    <Box
+ <Box
     sx={{ width: { md: '80%', xs: '100%' }, marginTop: '128px' }}
   > 
         <Divider component="div" role="presentation" textAlign="center" sx={{ width: "70%", margin: "0 auto",}}>
          <Typography variant="h4" sx={{ padding: "0px 64px" }}>Our Services</Typography>
         </Divider>
     <Stack direction="row" justifyContent="center" spacing={2} marginTop="32px" >
-    <Fab variant="extended">Towing Service</Fab>
-    <Fab variant="extended">Vehicle recovery</Fab>
-    <Fab variant="extended">Winching and extraction</Fab>
-    <Fab variant="extended">Speciality towing</Fab>
+        {firstStackData.map(item =>(
+              <Link to={`/services/${item.id}`} className="nav-item">    
+                <Fab variant="extended">{item.title}</Fab>
+            </Link>
+        ))}
     </Stack>
     
     <Stack direction="row" justifyContent="center" spacing={2} marginTop="16px">
-    <Fab variant="extended">24/7 Emergencey</Fab>
-    <Fab variant="extended">Roadside assistance</Fab>
-    <Fab variant="extended">Fuel delivery</Fab>
+        {secondStackData.map(item =>(
+            <Link to={`/services/${item.id}`} className="nav-item">    
+              <Fab variant="extended" >{item.title}</Fab>
+          </Link>
+          ))}
     </Stack>
-
 </Box>
- 
-  )
-}
-const MobileLayout = ()=>{
+ )}
+
+
+
+
+const MobileLayout = ()=>{  
+  // map to mobile layout
+  const firstStackDataMobile = serviceData.slice(0, 7); // Adjust the indices as needed
+
   return(
     <Box width="100%" marginTop='64px' padding="0px 8px">
        <Divider component="div" role="presentation" textAlign="center" sx={{ width: "90%", margin: "0 auto",}}>
          <Typography variant="h4" >Our Services</Typography>
         </Divider>
       <Grid container spacing={2} padding="0px 8px"  marginTop="24px">
-        <Grid item xs={6}>
-          <Fab  sx={{width: "100%"}}  variant="extended">Towing Service</Fab>
-        </Grid>
-        <Grid item xs={6}>
-          <Fab variant="extended" sx={{width: "100%"}}>Vehicle recovery</Fab>
-        </Grid>
-        <Grid item xs={6}>
-          <Fab  sx={{width: "100%"}} variant="extended">Fuel delivery</Fab>
-        </Grid>
-        <Grid item xs={6}>
-            <Fab   sx={{width: "100%"}} variant="extended">Speciality towing</Fab>
-        </Grid>
-        <Grid item xs={6}>
-          <Fab   sx={{width: "100%"}} variant="extended">24/7 Emergencey</Fab>
-        </Grid>
-        <Grid item xs={6}>
-          <Fab   sx={{width: "100%"}} variant="extended">Roadside assistance</Fab>
-        </Grid>
-          <Grid item xs={12} container justifyContent="center">
-            <Fab sx={{ width: "60%" }} variant="extended">Winching and extraction</Fab>
-          </Grid>
+        {
+          firstStackDataMobile.map((item, index) =>(
+            <Grid item xs={index === firstStackDataMobile.length - 1 ? 12 : 6} key={item.id}>
+            <Link to={`/services/${item.id}`} className="nav-item">
+              <Fab sx={{ width: "100%" }} variant="extended">{item.title}</Fab>
+            </Link>
+            </Grid>
+          ))
+        }
       </Grid>
     </Box>
   )

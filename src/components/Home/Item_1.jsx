@@ -1,9 +1,12 @@
 import React from 'react'
 import {Grid, Box, Button, Typography, Stack } from "@mui/material";
 import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
+import { useNavigate } from 'react-router-dom';
 
 
 const Item1 = () => {
+  const navigate = useNavigate()
+
   return (
     <Grid container sx={{width:{md: '80%', xs: '100%'}, marginTop:{xs: '16px', md: '64px'}}}>
       <Grid item xs={12} md={6}>
@@ -43,7 +46,8 @@ const Item1 = () => {
                             </a>
                     </Stack>
             </Box>
-            <Box><Button><HeadsetMicIcon sx={{marginRight: '6px'}}/> Contact us NOW</Button></Box>
+            <Box><Button onClick={()=>navigate('/contact')}><HeadsetMicIcon sx={{marginRight: '6px'}}/> Contact us NOW</Button></Box> 
+        
           </Box>
       </Grid> 
 

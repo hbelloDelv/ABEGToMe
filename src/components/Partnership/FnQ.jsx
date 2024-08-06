@@ -11,7 +11,7 @@ const FnQ = () => {
   return (
       <>
       {FnQData.map(item =>( 
-    <Accordion key={item.id}>
+    <Accordion key={item.id} sx={{ width:{xs: '90%', md: '80%' } }}>
         <AccordionSummary
           expandIcon={item.expandIcon ? <item.expandIcon style={{color: 'black', fontSize: '1.5rem'}}/> : <div>No Icon</div>}
           aria-controls={item.ariaControls}

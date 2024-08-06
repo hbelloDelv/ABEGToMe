@@ -2,8 +2,10 @@ import React from 'react'
 import {Box, Button, Grid, Typography, useMediaQuery} from '@mui/material';
 import {useTheme} from '@mui/material/styles';
 import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
+import { useNavigate } from 'react-router-dom';
 
 const Item6 = () => {
+    const navigate = useNavigate()
     const theme = useTheme();
     const isXs = useMediaQuery(theme.breakpoints.down('md'));
 
@@ -25,7 +27,7 @@ const Item6 = () => {
                         road as soon as possible. Our expert team is available 24/7, 
                         ensuring that help is always just a call or a tap away. 
                     </Typography>
-                    <Box sx={{marginTop: '16px'}}><Button><HeadsetMicIcon sx={{marginRight: '6px'}}/> Contact us NOW</Button></Box>
+                    <Box sx={{marginTop: '16px'}}><Button  onClick={()=>navigate('/contact')}><HeadsetMicIcon sx={{marginRight: '6px'}}/> Contact us NOW</Button></Box>
                 </Box>
             </Grid>
         </Grid>

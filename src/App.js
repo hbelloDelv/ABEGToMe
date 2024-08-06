@@ -5,13 +5,15 @@ import Home from "./components/Home/Home";
 import Services from "./components/Services/Services";
 import Partnership from "./components/Partnership/Partnership";
 import Blog from "./components/Blog/Blog";
+import BlogDetail from "./components/Blog/BlogDetail";
 import Gallary from "./components/Gallary/Gallary";
 import About from "./components/AboutUs/AboutUs";
 import Contact from "./components/ContactUs/Contact";
 import Footer from "./components/Footer/Footer";
-import DetailPage from "./components/Services/DetailPage";
+import ServiceDetail from "./components/Services/ServiceDetail";
 
 import { serviceData} from '../src/components/Services/serviceData'
+import {blogdata} from '../src/components/Blog/blogdata'
 
 function App() {
   return (
@@ -21,9 +23,10 @@ function App() {
         <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/services" element={<Services />}></Route>
-            <Route path="/services/:id" element={<DetailPage  serviceData={serviceData}/>}></Route>
+            <Route path="/services/:id" element={<ServiceDetail  serviceData={serviceData}/>}></Route>
             <Route path="/partnership" element={<Partnership />}></Route>
             <Route path="/blog" element={<Blog />}></Route>
+            <Route path="/blog/:id" element={<BlogDetail blogData={blogdata}/>}></Route>
             <Route path="/gallary" element={<Gallary />}></Route>
             <Route path="/about" element={<About />}></Route>
             <Route path="/contact" element={<Contact />}></Route>
