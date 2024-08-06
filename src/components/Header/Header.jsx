@@ -44,7 +44,7 @@ const Header = () => {
                         <li><Link to="/services" className="nav-item">Services</Link></li>
                         <li><Link to="/partnership" className="nav-item">Partnership</Link></li>
                         <li><Link to="/blog" className="nav-item">Blog</Link></li>
-                        <li><Link to="/gallary" className="nav-item">Gallery</Link></li>
+                        <li><Link to="/gallery" className="nav-item">Gallery</Link></li>
                         <li style={{minWidth: '8vw'}}><Link to="/about" className="nav-item">About Us</Link></li>
                         <li ><Link to="/contact" className="nav-item">Contact</Link></li>
                     </ul>

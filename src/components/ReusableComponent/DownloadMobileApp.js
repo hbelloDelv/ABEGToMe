@@ -16,10 +16,10 @@ const DesktopLayout = () => {
             }}
       
       >
-      <Box sx={{ width: '80vw'}}>
+      <Box sx={{ width: '70vw'}}>
         <Grid container>
             <Grid item xs={12} md={6} container 
-                    sx={{display: 'flex', alignItems: 'center', flexDirection: 'column', justifyContent: 'center'}}
+                    sx={{display: 'flex', alignItems: 'center', flexDirection: 'column', justifyContent: 'center',}}
                     >
                 <Box >
                     <Typography variant="h4">Experience simplicity with</Typography>

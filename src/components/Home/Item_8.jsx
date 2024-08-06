@@ -31,7 +31,7 @@ const DesktopLayout = () => {
                           <Typography variant="h3">Earn more,</Typography>
                           <Typography variant="h3">Become an Abeg</Typography>
                           <Typography variant="h3">Driver</Typography>
-                          <Box><Button variant="contained" onClick={()=>navigate('/about')}>Learn more</Button></Box>
+                          <Box><Button variant="contained" onClick={()=>navigate('/partnership')}>Learn more</Button></Box>
                       </Box>
                   </Grid>
               </Grid>
@@ -59,7 +59,7 @@ const MobileLayout = () =>{
                           <Typography variant="h5">Earn more,</Typography>
                           <Typography variant="h5">Become an Abeg Tow Me</Typography>
                           <Typography variant="h5">Driver</Typography>
-                          <Box><Button variant="contained" onClick={()=>navigate('/contact')}>Learn more</Button></Box>
+                          <Box><Button variant="contained" onClick={()=>navigate('/partnership')}>Learn more</Button></Box>
                       </Box>
                 </Grid>
             </Grid>

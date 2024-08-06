@@ -6,7 +6,7 @@ import Services from "./components/Services/Services";
 import Partnership from "./components/Partnership/Partnership";
 import Blog from "./components/Blog/Blog";
 import BlogDetail from "./components/Blog/BlogDetail";
-import Gallary from "./components/Gallary/Gallary";
+import Gallery from "./components/Gallary/Gallary";
 import About from "./components/AboutUs/AboutUs";
 import Contact from "./components/ContactUs/Contact";
 import Footer from "./components/Footer/Footer";
@@ -27,7 +27,7 @@ function App() {
             <Route path="/partnership" element={<Partnership />}></Route>
             <Route path="/blog" element={<Blog />}></Route>
             <Route path="/blog/:id" element={<BlogDetail blogData={blogdata}/>}></Route>
-            <Route path="/gallary" element={<Gallary />}></Route>
+            <Route path="/gallery" element={<Gallery />}></Route>
             <Route path="/about" element={<About />}></Route>
             <Route path="/contact" element={<Contact />}></Route>
         </Routes>

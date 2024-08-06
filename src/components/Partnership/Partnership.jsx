@@ -79,7 +79,11 @@ const Partnership = () => {
            <Typography variant={isXs ? 'h5' : 'h4'}>cash out week in week,</Typography>
            <Typography variant={isXs ? 'h5' : 'h4'} gutterBottom>out!</Typography>
            <Typography variant="body2" gutterBottom><strong>Register Now</strong> to become an Abeg Tow Me Driver and become your own boss</Typography>
-             <Box><Button>Sign up as a driver</Button></Box>
+             <Box>
+               <a href="https://play.google.com/store/apps/details?id=com.abegtowme.driver">
+               <Button>Sign up as a driver</Button>
+               </a>
+             </Box>
              </Box>
            </Box>
          </Grid>
@@ -164,7 +168,11 @@ const Partnership = () => {
                   <Typography variant="h4">Become an Abeg Tow Me</Typography>
                   <Typography variant="h4">Driver and be your</Typography>
                   <Typography variant="h4">own Boss</Typography>
-                  <Box mt="16px"><Button>Register NOW</Button></Box>
+                  <Box mt="16px">
+                    <a href="https://play.google.com/store/apps/details?id=com.abegtowme.driver">
+                      <Button>Register NOW</Button>
+                    </a>
+                    </Box>
                 </Box>
               </Grid>
               <Grid item md={5}>
@@ -202,7 +210,13 @@ const Partnership = () => {
                     width="100%"
                       >
                 </Box>
-                  <Box mt="16px"><Button>Register NOW</Button></Box>
+                  <Box mt="16px">
+                    <a href="https://play.google.com/store/apps/details?id=com.abegtowme.driver">
+                    <Button>
+                        Register NOW
+                    </Button>
+                  </a> 
+                  </Box>
               </Grid>
             </Grid>
           </Box>

@@ -17,7 +17,7 @@ export const serviceData = [
             {Description: 'Specialized towing for motorcycles, often using motorcycle-specific equipment'},
             {subTitle: 'Long-Distance Towing'},
             {Description: 'Towing services for vehicles that need to be transported over a long distance, such as interstate or cross-country'},
-        ],
+                   ],
         images: [
              "/asset/towing1.png",
              "/asset/towing3.png",
@@ -36,12 +36,18 @@ export const serviceData = [
             {Description: 'Recovery of vehicles stuck in off-road or remote areas'},
             {subTitle: 'Water Recovery'},
             {Description: 'Assistance for vehicles submerged in water, including retrieval and towing'},
+            {subTitle: 'Winching and Extraction'},
+            {subTitle: 'Mud Recovery'},
+            {Description: 'Assistance for vehicles stuck in mud or soft terrain'},
+            {subTitle: 'Ditch Extraction'},
+            {Description: 'Extraction services for vehicles stuck in ditches or embankments'},
         
         ],
 
         images: [
              "/asset/vehicleRecImg1.jpg",
-             "/asset/vehicleRecImg2.jpg",
+             "/asset/winchExtrImg2.png",
+             "/asset/winchExtrImg1.png",
         ],
         
     },
@@ -129,21 +135,5 @@ export const serviceData = [
         ],
     },
 
-    {
-        id: 'Winching_and_Extraction',
-        itemHeroImg: '/asset/winchExtrHeroImg.png',
-        title: 'Winching and Extraction',
-        subTypes: [
-            {subTitle: 'Mud Recovery'},
-            {Description: 'Assistance for vehicles stuck in mud or soft terrain'},
-            {subTitle: 'Ditch Extraction'},
-            {Description: 'Extraction services for vehicles stuck in ditches or embankments'},
-        ],
-
-        images:[
-             "/asset/winchExtrImg2.png",
-             "/asset/winchExtrImg1.png",
-        ],
-    },
 ]
 

@@ -22,7 +22,7 @@ const Item2 = () => {
     </Grid>
 
     <Grid item xs={12} md={6}> 
-          <Box sx={{padding:{md: '0px', xs: '8px'}}}  height="100%"  alignContent="flex-end">
+          <Box sx={{padding:{md: '0px', xs: '8px'}}}  height="100%"  >
           <Typography variant="h3">
               Who are we?
           </Typography>
